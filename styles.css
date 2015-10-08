@@ -80,6 +80,11 @@ h2 {
     float: left;
 }
 
+.count{
+    font-size: 25px;
+    display:none;
+}
+
 .header{
     border-top: solid 30px #00ACC2;
     background: url("img/banner.jpg") no-repeat center center;
@@ -436,6 +441,12 @@ iframe.desktop-map {
     h2{
         font-size: 40px;
     }
+
+    .count{
+        display: inline-block;
+    }
+
+
 }
 
 
