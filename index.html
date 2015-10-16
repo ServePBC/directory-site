@@ -10,7 +10,7 @@
         <meta name="description" content="Mission: To help you find ways to serve people within Palm Beach County.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="normalize.min.css">
         <link rel="stylesheet" href="styles.css">
 
         <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
@@ -67,18 +67,36 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="header">
+        <header class="main">
             <div class="container">
                 <h1>Welcome to ServePBC</h1>
                 <p>Mission: To help you find ways to serve people within Palm Beach County.</p>
                 <div class="header-dropdown">
                     <h2>I am interested in serving</h2>
+                        <ul>
+                            <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                            <li><a data-scroll-nav="1">The Homeless</a></li>
+                            <li><a data-scroll-nav="2">Children &amp; Youth</a></li>
+                            <li><a data-scroll-nav="3">Women &amp; Mothers</a></li>
+                            <li><a data-scroll-nav="4">Families</a></li>
+                            <li><a data-scroll-nav="5">The Elderly</a></li>
+                            <li><a data-scroll-nav="6">Special Needs</a></li>
+                            <li><a data-scroll-nav="7">Counseling &amp; Recovery</a></li>
+                        </ul>
+                </div>
+            </div>
+        </header>
+        
+        <header class="sticky-hidden">
+            <div class="container">q
+                <div class="header-dropdown">
+                    <h2>I am interested in serving</h2>
                     <a href="#">
                         <select name="serve" onchange="location = this.options[this.selectedIndex].value;">
                           <option value="#"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
-                          <option value="#homeless">The Homeless</option>
-                          <option value="#children">Children &amp; Youth</option>
-                          <option value="#womenandmothers">Women &amp; Mothers</option>
+                          <option>The Homeless</option>
+                          <option>Children &amp; Youth</option>
+                          <option>Women &amp; Mothers</option>
                           <option value="#families">Families</option>
                           <option value="#elderly">The Elderly</option>
                           <option value="#specialneeds">Special Needs</option>
@@ -87,9 +105,8 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </header>
         
-
         <img src="img/mobile-map.jpg" class="mobile-map"> 
 
         <!-- <iframe class="mobile-map" width='100%' height='300px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/cable3636.bdd2897e/attribution.html?access_token=pk.eyJ1IjoiY2FibGUzNjM2IiwiYSI6Ijc0Mjk0ZTE5YTY1ZmMwMWJhNWVkMTNmMDcyYjI5MWJiIn0.2wRx10DFsGguR6QPkcUhDQ'></iframe> -->
@@ -99,685 +116,668 @@
        <!--  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=z4fpKq0kSDVE.k2P06hBjjP18" width="100%" height="450"  frameBorder="0">
         </iframe> -->
 
-        <div class="dropdown-condensed">
-            <div class="container">
-                <h2>I am interested in serving</h2>
-                  <select name="serve" onchange="location = this.options[this.selectedIndex].value;">
-                  <option value="#"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
-                  <option value="#homeless">Homeless</option>
-                  <option value="#children">Children &amp;amp; Youth</option>
-                  <option value="#womenandmothers">Women &amp; Mothers</option>
-                  <option value="#families">Families</option>
-                  <option value="#elderly">Elderly</option>
-                  <option value="#specialneeds">Special Needs</option>
-                  <option value="#counselingandrecovery">Counseling &amp; Recovery</option>
-                </select>
-            </div>
-        </div>
-
         <div class="container">
             
-        
-        <ul class="facility">
+            <ul class="facility">
+
+                <div class="section">
+                    <a class="link-anchor" data-scroll-index="1"><h2>Homeless</h2></a>
+
+                    <li>
+                        <h3>CROS Ministries</h3>
+                        <p>
+                            CROS Ministries serves the hungry in Palm Beach and Martin Counties through community collaborations.
+                        </p>
+                        <p>
+                            <strong>→ Harvest fruits and vegtables from the field or serve in a soup kitchen</strong>
+                        </p>
+
+                        <div class="map">
+                            <a href="https://www.google.com/maps/place/301+1st+Ave+S,+Lake+Worth,+FL+33460" target="blank">
+                            301 First Avenue South<br/>
+                            Lake Worth, FL 33460
+                            </a>
+                        </div> 
+
+                        <div class="phone">
+                            <a href="tel:+5612339009">(561) 233-9009</a>
+                        </div>
+                        <div class="website">
+                            <a href="http://www.crosministries.org/" target="blank">
+                                crosministries.com
+                            </a>    
+                        </div>
+                    </li>
+
+                    <li class="space"></li>
+
+                    <li>
+                        <h3>Family Promise</h3>
+                        <p>
+                            Family Promise is part of a national organization with over 180 affiliates that provides temporary shelter, transportation, meals and comprehensive case management for families who are experiencing homelessness.
+                        </p>  
+                        <p>
+                            <strong>→ Cook, serve food, play with kids, or host a family through church</strong>
+                        </p>
+                        <div class="map">
+                            <a href="https://www.google.com/maps/place/1003+Allendale+Rd,+West+Palm+Beach,+FL+33405" target="blank">
+                                1003 Allendale Road<br/>
+                                West Palm Beach, FL 33405
+                            </a>
+                        </div> 
+                        <div class="phone">
+                            <a href="tel:+5613188864">(561) 318-8864</a>
+                        </div>
+                        <div class="website">
+                            <a href="http://www.familypromisencpbc.org" target="blank">
+                                familypromisencpbc.org
+                            </a>
+                        </div>
+                    </li>
+
+                    <div class="line-break"></div>
+
+                    <li>
+                        <h3>Homeless Coalition</h3>
+                        <p>
+                            The homeless coalition sponsors Project Homeless Connect three times a year. This national program brings together community volunteers, government agencies, nonprofits, businesses, service providers, faith organizations, and the private sector to help end homelessness.
+                        </p>
+                        <p>
+                            <strong>→ Distribute food, clothing, health screenings, comfort kits, give haircuts, and connect to valuable resources</strong>
+                        </p>
+                        <div class="map">
+                            <a href="https://www.google.com/maps/place/810+Datura+St,+West+Palm+Beach,+FL+33401" target="blank">
+                                810 Datura Street<br/>
+                                West Palm Beach, FL 33401
+                            </a>
+                        </div> 
+                        <div class="phone">
+                            <a href="tel:+5613554663">(561) 355-4663</a>
+                        </div>
+                        <div class="website">
+                            <a href="http://www.homelesscoalitionpbc.org/p/23/project-homeless-connect" target="blank">
+                                homelesscoalitionpbc.org/p/23/project-homeless-connect
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="space"></li>
+
+                    <li>
+                        <h3>Teach The World To Fish, Inc.</h3>
+                        <p>
+                             Teach The World To Fish is a not-for-profit organization whose mission is to provide high density nutritional opportunities to at-risk children and their families, the elderly, the homeless, and those with disabilities.
+                        </p>
+                        <p>
+                            <strong>→ Volunteer, donate agricultural equipment and gardening supplies, serve in administration through computer services, photography, and screen printing</strong>
+                        </p>
+                        <div class="map">
+                            <a href="https://www.google.com/maps/place/West+Palm+Beach,+FL+33402" target="blank">
+                                P.O. Box 2185<br/>
+                                West Palm Beach, FL 33402
+                            </a>
+                        </div> 
+                        <div class="phone">
+                            <a href="tel:+5612480344">(561) 248-0344 </a>
+                        </div>
+                        <div class="website">
+                            <a href="http://www.teachtheworld2fish.com" target="blank">
+                                teachtheworld2fish.com
+                            </a>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="section">
+                    <a class="link-anchor" data-scroll-index="2"><h2>Children &amp; Youth</h2></a>
+
+                    <li>
+                        <h3>Center for Creative Education</h3>
+                        <p>
+                            An educational nonprofit that was created more than 20 years ago to strengthen the presence of the arts in the classrooms of Palm Beach County, Florida. 
+                        </p>
+                        <p>
+                            <strong>→ Manage the front desk, organize art shows, help with fundraising, or assist a teacher
+                            </strong>
+                        </p>
+                        <div class="map">
+                            <a href="https://www.google.com/maps/place/425+24th+St,+West+Palm+Beach,+FL+33407" target="blank">
+                                425 24th Street<br/>
+                                West Palm Beach, FL 33407
+                            </a>
+                        </div> 
+                        <div class="phone">
+                            <a href="tel:+5618059927">(561) 805-9927</a>
+                        </div>
+                        <div class="website">
+                            <a href="http://cceflorida.org" target="blank">
+                                cceflorida.org
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="space"></li>
+
+                    <li>
+                        <h3>Youth for Christ</h3>
+                        <p>
+                            For over 30 years, Youth for Christ has been consistently pursuing the students of Palm Beach County in the hopes of building healthy relationships and introducing them to the person and work of Jesus. 
+                        </p>
+                        <p>
+                            <strong>→ Serve directly with students, intercessors, finanical partners, and help in the office</strong>
+                        </p>
+                        <div class="map">
+                            <a href="https://www.google.com/maps/place/800+Northpoint+Pkwy+%23202,+West+Palm+Beach,+FL+33407" target="blank">
+                                800 Northpoint Parkway<br/>
+                                Suite 202<br/>
+                                West Palm Beach, FL 33407
+                            </a>
+                        </div> 
+                        <div class="phone">
+                            <a href="tel:+5616865702">(561) 686-5702
+                        </div>
+                        <div class="website">
+                            <a href="http://www.yfcteens.com" target="blank">
+                                yfcteens.com
+                            </a>
+                        </div>
+                    </li>
+
+                    <div class="line-break"></div>
+
+                    <li>
+                        <h3>Young Life</h3>
+                        <p>
+                            Introducing adolescents to Jesus Christ and helping them grow in their faith.
+                        </p>
+                        <p>
+                            <strong>
+                                → Spend time with unreached middle and highshcool students
+                            </strong>
+                        </p>
+                        <div class="map">
+                            <a href="https://www.google.com/maps/place/North+Palm+Beach,+FL+33408" target="blank">
+                                PO Box 14034<br/>
+                                North Palm Beach, FL 33408
+                            </a>
+                        </div> 
+                        <div class="phone">
+                            <a href="tel:+8774389572">(877) 438-9572</a>
+                        </div>
+                        <div class="website">
+                            <a href="https://pbc.younglife.org/Pages/default.aspx" target="blank">
+                                pbc.younglife.org
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="space"></li>
+
+                    <li>
+                        <h3>Big Brothers Big Sisters</h3>
+                        <p>
+                            For more than 100 years, Big Brothers Big Sisters has operated under the belief that inherent in every child is the ability to succeed and thrive in life. We develop positive relationships that have a direct and lasting effect on the lives of young people.
+                        </p>
+                        <p>
+                            <strong>
+                                → Commit to mentoring a child, volunteer in the office, or help event planning
+                            </strong>
+                        </p>
+                        <div class="map">
+                            <a href="https://www.google.com/maps/place/1700+Kirk+Rd,+West+Palm+Beach,+FL+33406" target="blank">
+                                1700 Kirk Rd<br/>
+                                North Palm Beach, FL 33406
+                            </a>
+                        </div> 
+                        <div class="phone">
+                            <a href="tel:+5617273450">(561) 727-3450</a>
+                        </div>
+                        <div class="website">
+                            <a href="http://www.mentorbig.org/" target="blank">
+                                mentorbig.org
+                            </a>
+                        </div>
+                    </li>
+
+                    <div class="line-break"></div>
+
+                    <li>
+                        <h3>4-H Youth Development</h3>
+                        <p>
+                             4-H staff, volunteers and our partners create a wealth of opportunities that help young people learn and grow.  Clubs, afterschool programs, in-school programs, camps, fair, leadership opportunities and a wide array of special events serve as opportunities for children to develop Competence, Confidence, Character, Caring and Connection.
+                        </p>
+                        <p>
+                            <strong>
+                                → Make long-term commitments by coordinating or assisting at a local club or school program, share knowledge and skills on a short-term basis at workshops, special events, or camps, serve on advisory committees or assisting with daily office needs
+                            </strong>
+                        </p>
+                        <div class="map">
+                            <a href="https://www.google.com/maps/place/559+N+Military+Trl,+West+Palm+Beach,+FL+33415" target="blank">
+                                559 N Military Trail<br/>
+                                West Palm Beach, FL 33415
+                            </a>
+                        </div> 
+                        <div class="phone">
+                            <a href="tel:+5612331731">(561) 233-1731</a>
+                        </div>
+                        <div class="website">
+                            <a href="http://pbcgov.com/coextension/4h" target="blank">
+                                pbcgov.com/coextension/4h
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="space"></li>
+
+                    <li>
+                        <h3>GAL</h3>
+                        <p>
+                             A Guardian ad Litem (GAL) is a trained, court-appointed volunteer who advocates objectively and solely for the best interests of children who are abused, abandoned or neglected and who are involved in dependency court proceedings. A GAL serves as the eyes, ears and arms of the justice system. 
+                        </p>
+                        <p>
+                            <strong>
+                                → Become a GAL, serve in office duties &amp; data entry, community awareness, serve in special events, or grant writing support 
+                            </strong>
+                        </p>
+                        <div class="map">
+                            <a href="https://www.google.com/maps/place/559+N+Military+Trl,+West+Palm+Beach,+FL+33415" target="blank">
+                                205 N. Dixie Highway, Suite 4.1100<br/>
+                                West Palm Beach, FL 33401
+                            </a>
+                        </div> 
+                        <div class="phone">
+                            <a href="tel:+5613552773">(561) 355-2773</a>
+                        </div>
+                        <div class="website">
+                            <a href="http://www.galpbc.org" target="blank">
+                                galpbc.org
+                            </a>
+                        </div>
+                    </li>
+
+                    <div class="line-break"></div>
+
+                    <li>
+                        <h3>Place of Hope</h3>
+                        <p>
+                             Place of Hope is a unique faith-based, state-licensed children's organization providing family-style foster care; family outreach and intervention; maternity care; safety for victims of domestic minor sex trafficking; transitional housing and support services; foster care recruitment and support; hope and healing opportunities for children and families who have been traumatized by abuse and neglect throughout our region.
+                        </p>
+                        <p>
+                            <strong>
+                                → Mentor, tutor, prepare meals, teach skills classes, or provide professional medical, dental, construction, and legal services
+                            </strong>
+                        </p>
+                        <div class="map">
+                            <a href="https://www.google.com/maps/place/559+N+Military+Trl,+West+Palm+Beach,+FL+33415" target="blank">
+                                9078 Isaiah Lane<br/>
+                                Palm Beach Gardens, FL 33418
+                            </a>
+                        </div> 
+                        <div class="phone">
+                            <a href="tel:+5617757195">(561) 775-7195</a>
+                        </div>
+                        <div class="website">
+                            <a href="http://www.placeofhope.com" target="blank">
+                                placeofhope.com
+                            </a>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="section">
+                    <a class="link-anchor" data-scroll-index="3"><h2>Women &amp; Mothers</h2></a>
+
+                    <li>
+                        <h3>First Care</h3>
+                        <p>
+                            First Care is a Christ-centered organization providing education, counseling, and women's medical services to empower individuals to make life-affirming decisions leading to hope, health, and healing. Locations in West Palm Beach, Lake Worth, and Belle Glade.
+                        </p>
+                        <p>
+                            <strong>
+                                → Develop relationships with women, serve as a nurse or physician, office assistant, or event planning
+                            </strong>
+                        </p>
+                        <div class="map">
+                            <a href="https://www.google.com/maps/place/2200+N+Florida+Mango+Rd+%23102,+West+Palm+Beach,+FL+33409" target="blank">
+                                2200 N. Florida Mango Suite 102<br/>
+                                West Palm Beach, FL 33409
+                            </a>
+                        </div> 
+                        <div class="phone">
+                            <a href="tel:+5616882163">(561) 688-2163</a>
+                        </div>
+                        <div class="website">
+                            <a href="http://www.first-care.org/" target="blank">
+                                first-care.org
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="space"></li>
+
+                    <li>
+                        <h3>Epic Beauty</h3>
+                        <p>
+                            Epic Beauty's mission is Loving, Helping, &amp; Serving Women with the hope that only God can give. A small team visits the women who work in the Adult Entertainment Industry in PBC. Epic Beauty supports the women that are caught up in prostitution and homelessness on Broadway in WPB. We reach out to teens in tough situations. 
+                        </p>
+                        <p>
+                            <strong>
+                                → Be a part of the outreach team, collect care packages, sponsor a club outreach, or schedule a floral design workshop either at Epic Beauty or at your home, church, clubhouse etc.
+                            </strong>
+                        </p>
+                        <div class="map">
+                            <a href="https://www.google.com/maps/place/4715+Broadway,+West+Palm+Beach,+FL+33407" target="blank">
+                                4715 Broadway<br/>
+                                West Palm Beach, FL 33407
+                            </a>
+                        </div> 
+                        <div class="phone">
+                            <a href="tel:+5616882163">(561) 688-2163</a>
+                        </div>
+                        <div class="website">
+                            <a href="http://www.epicbeauty.org" target="blank">
+                                epicbeauty.org
+                            </a>
+                        </div>
+                    </li>
+
+                    <div class="line-break"></div>
+
+                    <li>
+                        <h3>Hannah’s Home</h3>
+                        <p>
+                            Hannah’s Home of South Florida provides a safe and loving Christian environment for single pregnant young women. Through counseling, life skills and continuing education, we offer hope and transform lives.
+                        </p>
+                        <p>
+                            <strong>
+                                → Assemble baby care packages, help clean, or fundraise to meet financial needs
+                            </strong>
+                        </p>
+                        <div class="map">
+                            <a href="https://www.google.com/maps/place/Tequesta,+FL+33469" target="blank">
+                                P.O. Box 4512<br/>
+                                Tequesta, FL 33469
+                            </a>
+                        </div> 
+                        <div class="phone">
+                            <a href="tel:+5616882163">(561) 277-9823</a>
+                        </div>
+                        <div class="website">
+                            <a href="http://www.hannahshomesf.org" target="blank">
+                                hannahshomesf.org
+                            </a>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="section">
+                    <a data-scroll-index="4"><h2>Families</h2></a>
+
+                    <li>
+                        <h3>Habitat for Hummanity</h3>
+                        <p>
+                            Habitat for Humanity of Palm Beach County partners with families in need to build affordable homes together. Each Habitat partner family is required to invest a minimum of 400 sweat equity hours of their own labor into the construction of homes before being eligible to purchase their home utilizing a 30 year, no profit, no interest loan.
+                        </p>
+                        <p>
+                            <strong>
+                                → Commit to constructing a home as a group or individual or volunteer in office administration
+                            </strong>
+                        </p>
+                        <div class="map">
+                            <a href="https://www.google.com/maps/place/6758+N+Military+Trl+%23301,+West+Palm+Beach,+FL+33407" target="blank">
+                                6758 N. Military Trail, Suite 301<br/>
+                                Riviera Beach, FL 33407
+                            </a>
+                        </div> 
+                        <div class="phone">
+                            <a href="tel:+5612532080">(561) 253-2080</a>
+                        </div>
+                        <div class="website">
+                            <a href="http://www.habitatpbc.org" target="blank">
+                                habitatpbc.org
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="space"></li>
+
+                    <li>
+                        <h3>Center for Family Service</h3>
+                        <p>
+                            Providing affordable, quality counseling services for residents of Palm Beach County, Center for Family Services embraces the philosophy that families should be the center of the community and in the center of every family should be a healthy connection. We are a family of caring professionals driven by the core values of commitment, quality, teamwork, pride and stewardship.
+                        </p>
+                        <p>
+                            <strong>
+                                → Serve in the main office, assist in food pantry drives, and participate in gardening, landscaping and maintenance on the Pat Reeves Village
+                            </strong>
+                        </p>
+                        <div class="map">
+                            <a href="https://www.google.com/maps/place/4101+Parker+Ave,+West+Palm+Beach,+FL+33405" target="blank">
+                                4101 Parker Ave.<br/>
+                                West Palm Beach, FL 33405
+                            </a>
+                        </div> 
+                        <div class="phone">
+                            <a href="tel:+5616161222">(561) 616-1222</a>
+                        </div>
+                        <div class="website">
+                            <a href="http://www.ctrfam.org" target="blank">
+                                ctrfam.org
+                            </a>
+                        </div>
+                    </li>
+
+                    <div class="line-break"></div>
+
+                    <li>
+                        <h3>Caridad Center</h3>
+                        <p>
+                            Caridad Center's Mission is to upgrade the health, education and living standards of underserved children and families. Their vision is to eliminate the cycle of poverty for the families that we serve in South Florida.
+                        </p>
+                        <p>
+                            <strong>
+                                → Volunteer as a skilled medical professional, serve in administration, be an interpreter, fundraise, or teach/tutor
+                            </strong>
+                        </p>
+                        <div class="map">
+                            <a href="https://www.google.com/maps/place/8645+W+Boynton+Beach+Blvd,+Boynton+Beach,+FL+33472" target="blank">
+                                8645 W Boynton Beach Blvd<br/>
+                                Boynton Beach, FL 33472
+                            </a>
+                        </div> 
+                        <div class="phone">
+                            <a href="tel:+5617376336">(561) 737-6336</a>
+                        </div>
+                        <div class="website">
+                            <a href="http://www.caridad.org" target="blank">
+                                caridad.org
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="space"></li>
+
+                    <li>
+                        <h3>Foundcare</h3>
+                        <p>
+                            FoundCare's Health Center provides accessible, affordable high-quality medical and dental care to anyone in the community. FoundCare provides comprehensive health services to the entire community, regardless of the ability to pay. 
+                        </p>
+                        <p>
+                            <strong>
+                                → Database entry, clerical and administrative duties, &amp; educational material packaging and distribution
+                            </strong>
+                        </p>
+                        <div class="map">
+                            <a href="https://www.google.com/maps/place/2330+S+Congress+Ave,+West+Palm+Beach,+FL+33406">
+                                2330 S. Congress Ave<br/>
+                                West Palm Beach, FL 33406
+                            </a>
+                        </div> 
+                        <div class="phone">
+                            <a href="tel:+5614729160">(561) 472-9160</a>
+                        </div>
+                        <div class="website">
+                            <a href="http://www.foundcare.org" target="blank">
+                                foundcare.org
+                            </a>
+                        </div>
+                    </li>
+
+                    <div class="line-break"></div>
+
+                    <li>
+                        <h3>Urban League</h3>
+                        <p>
+                            The Urban League of Palm Beach County, Inc was formed by a group of concerned citizens who believed in furthering the civil rights movement in Palm Beach County and assisting African Americans and other minorities in obtaining social and economic equality.
+                        </p>
+                        <p>
+                            <strong>
+                                → Work in office administration, mentor a youth, help low income residents file their income taxes and serve holiday meals
+                            </strong>
+                        </p>
+                        <div class="map">
+                            <a href="https://www.google.com/maps/place/1700+N+Australian+Ave,+West+Palm+Beach,+FL+33407">
+                                1700 North Australian Avenue<br/>
+                                West Palm Beach, FL 33407
+                            </a>
+                        </div> 
+                        <div class="phone">
+                            <a href="tel:+5618331461">(561) 833-1461</a>
+                        </div>
+                        <div class="website">
+                            <a href="http://www.ulpbc.org" target="blank">
+                                ulpbc.org
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="space"></li>
+
+                    <li>
+                        <h3>Farmworker Coordinating Council</h3>
+                        <p>
+                            The mission of the Farmworker Coordinating Council is to promote self-sufficiency and improve the quality of life of migrant and seasonal farmworkers through education, advocacy, and access to services.
+                        </p>
+                        <p>
+                            <strong>
+                                → Coordinate a food or clothing drive or attend fundraising events
+                            </strong>
+                        </p>
+                        <div class="map">
+                            <a href="https://www.google.com/maps/place/1313+Central+Ave,+Lake+Worth,+FL+33460">
+                                1313 Central Terrace<br/>
+                                Lake Worth, FL 33460
+                            </a>
+                        </div> 
+                        <div class="phone">
+                            <a href="tel:+5615337227">(561) 533-7227</a>
+                        </div>
+                        <div class="website">
+                            <a href="http://www.farmworkercouncil.com" target="blank">
+                                farmworkercouncil.com
+                            </a>
+                        </div>
+                    </li>
+
+                    <div class="line-break"></div>
+                </div>
+
+                <div class="section">
+                    <a data-scroll-index="5"><h2>Elderly</h2></a>
+
+                    <li>
+                        <h3>Lourdes-Noreen McKeen</h3>
+                        <p>
+                            Lourdes-Noreen McKeen is a full-service retirement community with independent and assisted living accommodations, as well as skilled nursing and short-term rehab care.
+                        </p>
+                        <p>
+                            <strong>
+                                → Provide companionship, deliver flowers, entertain residents by singing or playing an instrument, lead trivia groups, take residents out for fresh air, help in the beauty salon or barber shop, read a book, accompany to religious services, or teach an elder person how to use the computer
+                            </strong>
+                        </p>
+                        <div class="map">
+                            <a href="https://www.google.com/maps/place/315+S+Flagler+Dr,+West+Palm+Beach,+FL+33401" target="blank">
+                                315 South Flagler Drive<br/>
+                                West Palm Beach, FL 33401
+                            </a>
+                        </div> 
+                        <div class="phone">
+                            <a href="tel:+5616882163">(561) 655-8544</a>
+                        </div>
+                        <div class="website">
+                            <a href="http://www.lourdesmckeen.org" target="blank">
+                                lourdesmckeen.org
+                            </a>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="section">
+                    <a data-scroll-index="6"><h2>Special Needs</h2></a>
+
+                    <li>
+                        <h3>Vinceremos Therapeutic Riding Center</h3>
+                        <p>
+                            Vinceremos serves children and adults with developmental, physical and psychological disabilities in its dynamic stable environment.  Vinceremos means "to overcome" or "to conquer" in Latin.
+                        </p>
+                        <p>
+                            <strong>
+                                → Clean stalls &amp; maintain the barn, work with horses &amp; riders, assist with office duties, or with special evetns
+                            </strong>
+                        </p>
+                        <div class="map">
+                            <a href="https://www.google.com/maps/place/13300+6th+Ct+N,+Loxahatchee,+FL+33470">
+                                13300 6th Court North<br/>
+                                Loxahatchee, FL  33470
+                            </a>
+                        </div> 
+                        <div class="phone">
+                            <a href="tel:+5617929900">(561) 792-9900</a>
+                        </div>
+                        <div class="website">
+                            <a href="http://vinceremos.org" target="blank">
+                                vinceremos.org
+                            </a>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="section">
+                    <a data-scroll-index="7"><h2>Counseling &amp; Recovery</h2></a>
+
+                    <li>
+                        <h3>Mental Health Association</h3>
+                        <p>
+                            The Mental Health Association of Palm Beach County works to improve mental wellness and eliminate stigma in our community through education, advocacy, and outreach.
+                        </p>
+                        <p>
+                            <strong>
+                                → Answer calls for the helpline support team, listen to children and discuss problems, volunteer as a mental health professional
+                            </strong>
+                        </p>
+                        <div class="map">
+                            <a href="https://www.google.com/maps/place/909+Fern+St,+West+Palm+Beach,+FL+33401" target="blank">
+                                909 Fern Street<br/>
+                                West Palm Beach, FL 33401
+                            </a>
+                        </div> 
+                        <div class="phone">
+                            <a href="tel:+5618323755">(561) 832-3755</a>
+                        </div>
+                        <div class="website">
+                            <a href="http://www.mhapbc.org" target="blank">
+                                mhapbc.org
+                            </a>
+                        </div>
+                    </li>
+
+                    <div class="line-break"></div>
+                </div>
+
+                <!-- <h2>Prison Ministry</h2> -->
+            </ul>
             
-            <a name="homeless"><h2>Homeless <span class="count">(4)</span></h2></a>
-
-
-            <li>
-                <h3>CROS Ministries</h3>
-                <p>
-                    CROS Ministries serves the hungry in Palm Beach and Martin Counties through community collaborations.
-                </p>
-                <p>
-                    <strong>→ Harvest fruits and vegtables from the field or serve in a soup kitchen</strong>
-                </p>
-                
-                <div class="map">
-                    <a href="https://www.google.com/maps/place/301+1st+Ave+S,+Lake+Worth,+FL+33460" target="blank">
-                    301 First Avenue South<br/>
-                    Lake Worth, FL 33460
-                    </a>
-                </div> 
-
-                <div class="phone">
-                    <a href="tel:+5612339009">(561) 233-9009</a>
-                </div>
-                <div class="website">
-                    <a href="http://www.crosministries.org/" target="blank">
-                        crosministries.com
-                    </a>    
-                </div>
-            </li>
-
-            <li class="space"></li>
-            
-            <li>
-                <h3>Family Promise</h3>
-                <p>
-                    Family Promise is part of a national organization with over 180 affiliates that provides temporary shelter, transportation, meals and comprehensive case management for families who are experiencing homelessness.
-                </p>  
-                <p>
-                    <strong>→ Cook, serve food, play with kids, or host a family through church</strong>
-                </p>
-                <div class="map">
-                    <a href="https://www.google.com/maps/place/1003+Allendale+Rd,+West+Palm+Beach,+FL+33405" target="blank">
-                        1003 Allendale Road<br/>
-                        West Palm Beach, FL 33405
-                    </a>
-                </div> 
-                <div class="phone">
-                    <a href="tel:+5613188864">(561) 318-8864</a>
-                </div>
-                <div class="website">
-                    <a href="http://www.familypromisencpbc.org" target="blank">
-                        familypromisencpbc.org
-                    </a>
-                </div>
-            </li>
-
-            <div class="line-break"></div>
-
-            <li>
-                <h3>Homeless Coalition</h3>
-                <p>
-                    The homeless coalition sponsors Project Homeless Connect three times a year. This national program brings together community volunteers, government agencies, nonprofits, businesses, service providers, faith organizations, and the private sector to help end homelessness.
-                </p>
-                <p>
-                    <strong>→ Distribute food, clothing, health screenings, comfort kits, give haircuts, and connect to valuable resources</strong>
-                </p>
-                <div class="map">
-                    <a href="https://www.google.com/maps/place/810+Datura+St,+West+Palm+Beach,+FL+33401" target="blank">
-                        810 Datura Street<br/>
-                        West Palm Beach, FL 33401
-                    </a>
-                </div> 
-                <div class="phone">
-                    <a href="tel:+5613554663">(561) 355-4663</a>
-                </div>
-                <div class="website">
-                    <a href="http://www.homelesscoalitionpbc.org/p/23/project-homeless-connect" target="blank">
-                        homelesscoalitionpbc.org/p/23/project-homeless-connect
-                    </a>
-                </div>
-            </li>
-            
-            <li class="space"></li>
-
-            <li>
-                <h3>Teach The World To Fish, Inc.</h3>
-                <p>
-                     Teach The World To Fish is a not-for-profit organization whose mission is to provide high density nutritional opportunities to at-risk children and their families, the elderly, the homeless, and those with disabilities.
-                </p>
-                <p>
-                    <strong>→ Volunteer, donate agricultural equipment and gardening supplies, serve in administration through computer services, photography, and screen printing</strong>
-                </p>
-                <div class="map">
-                    <a href="https://www.google.com/maps/place/West+Palm+Beach,+FL+33402" target="blank">
-                        P.O. Box 2185<br/>
-                        West Palm Beach, FL 33402
-                    </a>
-                </div> 
-                <div class="phone">
-                    <a href="tel:+5612480344">(561) 248-0344 </a>
-                </div>
-                <div class="website">
-                    <a href="http://www.teachtheworld2fish.com" target="blank">
-                        teachtheworld2fish.com
-                    </a>
-                </div>
-            </li>
-            
-        
-
-        <a name="children"><h2>Children &amp; Youth <span class="count">(7)</span></h2></a>
-            
-            <li>
-                <h3>Center for Creative Education</h3>
-                <p>
-                    An educational nonprofit that was created more than 20 years ago to strengthen the presence of the arts in the classrooms of Palm Beach County, Florida. 
-                </p>
-                <p>
-                    <strong>→ Manage the front desk, organize art shows, help with fundraising, or assist a teacher
-                    </strong>
-                </p>
-                <div class="map">
-                    <a href="https://www.google.com/maps/place/425+24th+St,+West+Palm+Beach,+FL+33407" target="blank">
-                        425 24th Street<br/>
-                        West Palm Beach, FL 33407
-                    </a>
-                </div> 
-                <div class="phone">
-                    <a href="tel:+5618059927">(561) 805-9927</a>
-                </div>
-                <div class="website">
-                    <a href="http://cceflorida.org" target="blank">
-                        cceflorida.org
-                    </a>
-                </div>
-            </li>
-            
-            <li class="space"></li>
-
-            <li>
-                <h3>Youth for Christ</h3>
-                <p>
-                    For over 30 years, Youth for Christ has been consistently pursuing the students of Palm Beach County in the hopes of building healthy relationships and introducing them to the person and work of Jesus. 
-                </p>
-                <p>
-                    <strong>→ Serve directly with students, intercessors, finanical partners, and help in the office</strong>
-                </p>
-                <div class="map">
-                    <a href="https://www.google.com/maps/place/800+Northpoint+Pkwy+%23202,+West+Palm+Beach,+FL+33407" target="blank">
-                        800 Northpoint Parkway<br/>
-                        Suite 202<br/>
-                        West Palm Beach, FL 33407
-                    </a>
-                </div> 
-                <div class="phone">
-                    <a href="tel:+5616865702">(561) 686-5702
-                </div>
-                <div class="website">
-                    <a href="http://www.yfcteens.com" target="blank">
-                        yfcteens.com
-                    </a>
-                </div>
-            </li>
-
-            <div class="line-break"></div>
-
-            <li>
-                <h3>Young Life</h3>
-                <p>
-                    Introducing adolescents to Jesus Christ and helping them grow in their faith.
-                </p>
-                <p>
-                    <strong>
-                        → Spend time with unreached middle and highshcool students
-                    </strong>
-                </p>
-                <div class="map">
-                    <a href="https://www.google.com/maps/place/North+Palm+Beach,+FL+33408" target="blank">
-                        PO Box 14034<br/>
-                        North Palm Beach, FL 33408
-                    </a>
-                </div> 
-                <div class="phone">
-                    <a href="tel:+8774389572">(877) 438-9572</a>
-                </div>
-                <div class="website">
-                    <a href="https://pbc.younglife.org/Pages/default.aspx" target="blank">
-                        pbc.younglife.org
-                    </a>
-                </div>
-            </li>
-
-            <li class="space"></li>
-            
-            <li>
-                <h3>Big Brothers Big Sisters</h3>
-                <p>
-                    For more than 100 years, Big Brothers Big Sisters has operated under the belief that inherent in every child is the ability to succeed and thrive in life. We develop positive relationships that have a direct and lasting effect on the lives of young people.
-                </p>
-                <p>
-                    <strong>
-                        → Commit to mentoring a child, volunteer in the office, or help event planning
-                    </strong>
-                </p>
-                <div class="map">
-                    <a href="https://www.google.com/maps/place/1700+Kirk+Rd,+West+Palm+Beach,+FL+33406" target="blank">
-                        1700 Kirk Rd<br/>
-                        North Palm Beach, FL 33406
-                    </a>
-                </div> 
-                <div class="phone">
-                    <a href="tel:+5617273450">(561) 727-3450</a>
-                </div>
-                <div class="website">
-                    <a href="http://www.mentorbig.org/" target="blank">
-                        mentorbig.org
-                    </a>
-                </div>
-            </li>
-
-            <div class="line-break"></div>
-
-            <li>
-                <h3>4-H Youth Development</h3>
-                <p>
-                     4-H staff, volunteers and our partners create a wealth of opportunities that help young people learn and grow.  Clubs, afterschool programs, in-school programs, camps, fair, leadership opportunities and a wide array of special events serve as opportunities for children to develop Competence, Confidence, Character, Caring and Connection.
-                </p>
-                <p>
-                    <strong>
-                        → Make long-term commitments by coordinating or assisting at a local club or school program, share knowledge and skills on a short-term basis at workshops, special events, or camps, serve on advisory committees or assisting with daily office needs
-                    </strong>
-                </p>
-                <div class="map">
-                    <a href="https://www.google.com/maps/place/559+N+Military+Trl,+West+Palm+Beach,+FL+33415" target="blank">
-                        559 N Military Trail<br/>
-                        West Palm Beach, FL 33415
-                    </a>
-                </div> 
-                <div class="phone">
-                    <a href="tel:+5612331731">(561) 233-1731</a>
-                </div>
-                <div class="website">
-                    <a href="http://pbcgov.com/coextension/4h" target="blank">
-                        pbcgov.com/coextension/4h
-                    </a>
-                </div>
-            </li>
-
-            <li class="space"></li>
-
-            <li>
-                <h3>GAL</h3>
-                <p>
-                     A Guardian ad Litem (GAL) is a trained, court-appointed volunteer who advocates objectively and solely for the best interests of children who are abused, abandoned or neglected and who are involved in dependency court proceedings. A GAL serves as the eyes, ears and arms of the justice system. 
-                </p>
-                <p>
-                    <strong>
-                        → Become a GAL, serve in office duties &amp; data entry, community awareness, serve in special events, or grant writing support 
-                    </strong>
-                </p>
-                <div class="map">
-                    <a href="https://www.google.com/maps/place/559+N+Military+Trl,+West+Palm+Beach,+FL+33415" target="blank">
-                        205 N. Dixie Highway, Suite 4.1100<br/>
-                        West Palm Beach, FL 33401
-                    </a>
-                </div> 
-                <div class="phone">
-                    <a href="tel:+5613552773">(561) 355-2773</a>
-                </div>
-                <div class="website">
-                    <a href="http://www.galpbc.org" target="blank">
-                        galpbc.org
-                    </a>
-                </div>
-            </li>
-
-            <div class="line-break"></div>
-
-            <li>
-                <h3>Place of Hope</h3>
-                <p>
-                     Place of Hope is a unique faith-based, state-licensed children's organization providing family-style foster care; family outreach and intervention; maternity care; safety for victims of domestic minor sex trafficking; transitional housing and support services; foster care recruitment and support; hope and healing opportunities for children and families who have been traumatized by abuse and neglect throughout our region.
-                </p>
-                <p>
-                    <strong>
-                        → Mentor, tutor, prepare meals, teach skills classes, or provide professional medical, dental, construction, and legal services
-                    </strong>
-                </p>
-                <div class="map">
-                    <a href="https://www.google.com/maps/place/559+N+Military+Trl,+West+Palm+Beach,+FL+33415" target="blank">
-                        9078 Isaiah Lane<br/>
-                        Palm Beach Gardens, FL 33418
-                    </a>
-                </div> 
-                <div class="phone">
-                    <a href="tel:+5617757195">(561) 775-7195</a>
-                </div>
-                <div class="website">
-                    <a href="http://www.placeofhope.com" target="blank">
-                        placeofhope.com
-                    </a>
-                </div>
-            </li>
-            
-
-        <a name="womenandmothers"><h2>Women &amp; Mothers <span class="count">(3)</span></h2></a>
-
-            <li>
-                <h3>First Care</h3>
-                <p>
-                    First Care is a Christ-centered organization providing education, counseling, and women's medical services to empower individuals to make life-affirming decisions leading to hope, health, and healing. Locations in West Palm Beach, Lake Worth, and Belle Glade.
-                </p>
-                <p>
-                    <strong>
-                        → Develop relationships with women, serve as a nurse or physician, office assistant, or event planning
-                    </strong>
-                </p>
-                <div class="map">
-                    <a href="https://www.google.com/maps/place/2200+N+Florida+Mango+Rd+%23102,+West+Palm+Beach,+FL+33409" target="blank">
-                        2200 N. Florida Mango Suite 102<br/>
-                        West Palm Beach, FL 33409
-                    </a>
-                </div> 
-                <div class="phone">
-                    <a href="tel:+5616882163">(561) 688-2163</a>
-                </div>
-                <div class="website">
-                    <a href="http://www.first-care.org/" target="blank">
-                        first-care.org
-                    </a>
-                </div>
-            </li>
-
-            <li class="space"></li>
-
-            <li>
-                <h3>Epic Beauty</h3>
-                <p>
-                    Epic Beauty's mission is Loving, Helping, &amp; Serving Women with the hope that only God can give. A small team visits the women who work in the Adult Entertainment Industry in PBC. Epic Beauty supports the women that are caught up in prostitution and homelessness on Broadway in WPB. We reach out to teens in tough situations. 
-                </p>
-                <p>
-                    <strong>
-                        → Be a part of the outreach team, collect care packages, sponsor a club outreach, or schedule a floral design workshop either at Epic Beauty or at your home, church, clubhouse etc.
-                    </strong>
-                </p>
-                <div class="map">
-                    <a href="https://www.google.com/maps/place/4715+Broadway,+West+Palm+Beach,+FL+33407" target="blank">
-                        4715 Broadway<br/>
-                        West Palm Beach, FL 33407
-                    </a>
-                </div> 
-                <div class="phone">
-                    <a href="tel:+5616882163">(561) 688-2163</a>
-                </div>
-                <div class="website">
-                    <a href="http://www.epicbeauty.org" target="blank">
-                        epicbeauty.org
-                    </a>
-                </div>
-            </li>
-
-            <div class="line-break"></div>
-
-            <li>
-                <h3>Hannah’s Home</h3>
-                <p>
-                    Hannah’s Home of South Florida provides a safe and loving Christian environment for single pregnant young women. Through counseling, life skills and continuing education, we offer hope and transform lives.
-                </p>
-                <p>
-                    <strong>
-                        → Assemble baby care packages, help clean, or fundraise to meet financial needs
-                    </strong>
-                </p>
-                <div class="map">
-                    <a href="https://www.google.com/maps/place/Tequesta,+FL+33469" target="blank">
-                        P.O. Box 4512<br/>
-                        Tequesta, FL 33469
-                    </a>
-                </div> 
-                <div class="phone">
-                    <a href="tel:+5616882163">(561) 277-9823</a>
-                </div>
-                <div class="website">
-                    <a href="http://www.hannahshomesf.org" target="blank">
-                        hannahshomesf.org
-                    </a>
-                </div>
-            </li>
-
-
-
-        <a name="families"><h2>Families <span class="count">(6)</span></h2></a>
-
-            <li>
-                <h3>Habitat for Hummanity</h3>
-                <p>
-                    Habitat for Humanity of Palm Beach County partners with families in need to build affordable homes together. Each Habitat partner family is required to invest a minimum of 400 sweat equity hours of their own labor into the construction of homes before being eligible to purchase their home utilizing a 30 year, no profit, no interest loan.
-                </p>
-                <p>
-                    <strong>
-                        → Commit to constructing a home as a group or individual or volunteer in office administration
-                    </strong>
-                </p>
-                <div class="map">
-                    <a href="https://www.google.com/maps/place/6758+N+Military+Trl+%23301,+West+Palm+Beach,+FL+33407" target="blank">
-                        6758 N. Military Trail, Suite 301<br/>
-                        Riviera Beach, FL 33407
-                    </a>
-                </div> 
-                <div class="phone">
-                    <a href="tel:+5612532080">(561) 253-2080</a>
-                </div>
-                <div class="website">
-                    <a href="http://www.habitatpbc.org" target="blank">
-                        habitatpbc.org
-                    </a>
-                </div>
-            </li>
-
-            <li class="space"></li>
-
-            <li>
-                <h3>Center for Family Service</h3>
-                <p>
-                    Providing affordable, quality counseling services for residents of Palm Beach County, Center for Family Services embraces the philosophy that families should be the center of the community and in the center of every family should be a healthy connection. We are a family of caring professionals driven by the core values of commitment, quality, teamwork, pride and stewardship.
-                </p>
-                <p>
-                    <strong>
-                        → Serve in the main office, assist in food pantry drives, and participate in gardening, landscaping and maintenance on the Pat Reeves Village
-                    </strong>
-                </p>
-                <div class="map">
-                    <a href="https://www.google.com/maps/place/4101+Parker+Ave,+West+Palm+Beach,+FL+33405" target="blank">
-                        4101 Parker Ave.<br/>
-                        West Palm Beach, FL 33405
-                    </a>
-                </div> 
-                <div class="phone">
-                    <a href="tel:+5616161222">(561) 616-1222</a>
-                </div>
-                <div class="website">
-                    <a href="http://www.ctrfam.org" target="blank">
-                        ctrfam.org
-                    </a>
-                </div>
-            </li>
-
-            <div class="line-break"></div>
-
-            <li>
-                <h3>Caridad Center</h3>
-                <p>
-                    Caridad Center's Mission is to upgrade the health, education and living standards of underserved children and families. Their vision is to eliminate the cycle of poverty for the families that we serve in South Florida.
-                </p>
-                <p>
-                    <strong>
-                        → Volunteer as a skilled medical professional, serve in administration, be an interpreter, fundraise, or teach/tutor
-                    </strong>
-                </p>
-                <div class="map">
-                    <a href="https://www.google.com/maps/place/8645+W+Boynton+Beach+Blvd,+Boynton+Beach,+FL+33472" target="blank">
-                        8645 W Boynton Beach Blvd<br/>
-                        Boynton Beach, FL 33472
-                    </a>
-                </div> 
-                <div class="phone">
-                    <a href="tel:+5617376336">(561) 737-6336</a>
-                </div>
-                <div class="website">
-                    <a href="http://www.caridad.org" target="blank">
-                        caridad.org
-                    </a>
-                </div>
-            </li>
-
-            <li class="space"></li>
-
-            <li>
-                <h3>Foundcare</h3>
-                <p>
-                    FoundCare's Health Center provides accessible, affordable high-quality medical and dental care to anyone in the community. FoundCare provides comprehensive health services to the entire community, regardless of the ability to pay. 
-                </p>
-                <p>
-                    <strong>
-                        → Database entry, clerical and administrative duties, &amp; educational material packaging and distribution
-                    </strong>
-                </p>
-                <div class="map">
-                    <a href="https://www.google.com/maps/place/2330+S+Congress+Ave,+West+Palm+Beach,+FL+33406">
-                        2330 S. Congress Ave<br/>
-                        West Palm Beach, FL 33406
-                    </a>
-                </div> 
-                <div class="phone">
-                    <a href="tel:+5614729160">(561) 472-9160</a>
-                </div>
-                <div class="website">
-                    <a href="http://www.foundcare.org" target="blank">
-                        foundcare.org
-                    </a>
-                </div>
-            </li>
-
-            <div class="line-break"></div>
-
-            <li>
-                <h3>Urban League</h3>
-                <p>
-                    The Urban League of Palm Beach County, Inc was formed by a group of concerned citizens who believed in furthering the civil rights movement in Palm Beach County and assisting African Americans and other minorities in obtaining social and economic equality.
-                </p>
-                <p>
-                    <strong>
-                        → Work in office administration, mentor a youth, help low income residents file their income taxes and serve holiday meals
-                    </strong>
-                </p>
-                <div class="map">
-                    <a href="https://www.google.com/maps/place/1700+N+Australian+Ave,+West+Palm+Beach,+FL+33407">
-                        1700 North Australian Avenue<br/>
-                        West Palm Beach, FL 33407
-                    </a>
-                </div> 
-                <div class="phone">
-                    <a href="tel:+5618331461">(561) 833-1461</a>
-                </div>
-                <div class="website">
-                    <a href="http://www.ulpbc.org" target="blank">
-                        ulpbc.org
-                    </a>
-                </div>
-            </li>
-
-            <li class="space"></li>
-
-            <li>
-                <h3>Farmworker Coordinating Council</h3>
-                <p>
-                    The mission of the Farmworker Coordinating Council is to promote self-sufficiency and improve the quality of life of migrant and seasonal farmworkers through education, advocacy, and access to services.
-                </p>
-                <p>
-                    <strong>
-                        → Coordinate a food or clothing drive or attend fundraising events
-                    </strong>
-                </p>
-                <div class="map">
-                    <a href="https://www.google.com/maps/place/1313+Central+Ave,+Lake+Worth,+FL+33460">
-                        1313 Central Terrace<br/>
-                        Lake Worth, FL 33460
-                    </a>
-                </div> 
-                <div class="phone">
-                    <a href="tel:+5615337227">(561) 533-7227</a>
-                </div>
-                <div class="website">
-                    <a href="http://www.farmworkercouncil.com" target="blank">
-                        farmworkercouncil.com
-                    </a>
-                </div>
-            </li>
-
-            <div class="line-break"></div>
-
-
-        <a name="elderly"><h2>Elderly <span class="count">(1)</span></h2></a>
-
-            <li>
-                <h3>Lourdes-Noreen McKeen</h3>
-                <p>
-                    Lourdes-Noreen McKeen is a full-service retirement community with independent and assisted living accommodations, as well as skilled nursing and short-term rehab care.
-                </p>
-                <p>
-                    <strong>
-                        → Provide companionship, deliver flowers, entertain residents by singing or playing an instrument, lead trivia groups, take residents out for fresh air, help in the beauty salon or barber shop, read a book, accompany to religious services, or teach an elder person how to use the computer
-                    </strong>
-                </p>
-                <div class="map">
-                    <a href="https://www.google.com/maps/place/315+S+Flagler+Dr,+West+Palm+Beach,+FL+33401" target="blank">
-                        315 South Flagler Drive<br/>
-                        West Palm Beach, FL 33401
-                    </a>
-                </div> 
-                <div class="phone">
-                    <a href="tel:+5616882163">(561) 655-8544</a>
-                </div>
-                <div class="website">
-                    <a href="http://www.lourdesmckeen.org" target="blank">
-                        lourdesmckeen.org
-                    </a>
-                </div>
-            </li>
-
-        <a name="specialneeds"><h2>Special Needs <span class="count">(4)</span></h2></a>
-
-            <li>
-                <h3>Vinceremos Therapeutic Riding Center</h3>
-                <p>
-                    Vinceremos serves children and adults with developmental, physical and psychological disabilities in its dynamic stable environment.  Vinceremos means "to overcome" or "to conquer" in Latin.
-                </p>
-                <p>
-                    <strong>
-                        → Clean stalls &amp; maintain the barn, work with horses &amp; riders, assist with office duties, or with special evetns
-                    </strong>
-                </p>
-                <div class="map">
-                    <a href="https://www.google.com/maps/place/13300+6th+Ct+N,+Loxahatchee,+FL+33470">
-                        13300 6th Court North<br/>
-                        Loxahatchee, FL  33470
-                    </a>
-                </div> 
-                <div class="phone">
-                    <a href="tel:+5617929900">(561) 792-9900</a>
-                </div>
-                <div class="website">
-                    <a href="http://vinceremos.org" target="blank">
-                        vinceremos.org
-                    </a>
-                </div>
-            </li>
-
-        <a name="counselingandrecovery"><h2>Counseling &amp; Recovery <span class="count">(1)</span></h2></a>
-
-            <li>
-                <h3>Mental Health Association</h3>
-                <p>
-                    The Mental Health Association of Palm Beach County works to improve mental wellness and eliminate stigma in our community through education, advocacy, and outreach.
-                </p>
-                <p>
-                    <strong>
-                        → Answer calls for the helpline support team, listen to children and discuss problems, volunteer as a mental health professional
-                    </strong>
-                </p>
-                <div class="map">
-                    <a href="https://www.google.com/maps/place/909+Fern+St,+West+Palm+Beach,+FL+33401" target="blank">
-                        909 Fern Street<br/>
-                        West Palm Beach, FL 33401
-                    </a>
-                </div> 
-                <div class="phone">
-                    <a href="tel:+5618323755">(561) 832-3755</a>
-                </div>
-                <div class="website">
-                    <a href="http://www.mhapbc.org" target="blank">
-                        mhapbc.org
-                    </a>
-                </div>
-            </li>
-
-            <div class="line-break"></div>
-
-            <!-- <h2>Prison Ministry</h2> -->
-
-
-        </ul>
-
         </div>
-
-
-
-
-
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
@@ -814,7 +814,39 @@
         </div>
 
     </div>
+    
+    
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="scrollit.js"></script>
+    <script>
+    
+	$(function() {
+	//caches a jQuery object containing the header element
+	var header = $(".sticky-hidden");
+	  $(window).scroll(function() {
+	      var scroll = $(window).scrollTop();
 
+	      if (scroll >= 700) {
+	          header.removeClass("sticky-hidden").addClass("sticky-visable");
+	      } else {
+	          header.removeClass("sticky-visable").addClass("sticky-hidden");
+	      }
+	  });
+	});
+        
+    $(function(){   
+        $.scrollIt({
+            upKey: 38,             // key code to navigate to the next section
+            downKey: 40,           // key code to navigate to the previous section
+            easing: 'linear',      // the easing function for animation
+            scrollTime: 600,       // how long (in ms) the animation takes
+            activeClass: 'active', // class given to the active nav element
+            onPageChange: null,    // function(pageIndex) that is called when page is changed
+            topOffset: -70           // offset (in px) for fixed top navigation
+        });
+    });
+
+    </script>
 
     </body>
 </html>

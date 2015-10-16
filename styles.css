@@ -62,9 +62,7 @@ body {
     margin: 0;
 }
 
-
-
-h1 {
+ h1 {
     color: white;
     font-weight: 300;
     font-size:35px;
@@ -80,12 +78,16 @@ h2 {
     float: left;
 }
 
+<<<<<<< HEAD
+header.main {
+=======
 .count{
     font-size: 25px;
     display:none;
 }
 
 .header{
+>>>>>>> CalebAmesbury/master
     border-top: solid 30px #00ACC2;
     background: url("img/banner.jpg") no-repeat center center;
     -webkit-background-size: cover;
@@ -94,12 +96,91 @@ h2 {
     background-size: cover;
 }
 
-.header p {
+header.main h1 {
+    color: white;
+    font-weight: 300;
+    font-size:35px;
+    padding-top: 30px;
+}
+
+header.main p {
     font-size: 18px;
-    color:white;
+    color: white;
     line-height: 30px;
     padding-bottom: 20px;
     margin: 0; 
+}
+
+header.main h2 {
+    float: left;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;  
+    border: none;
+    width: 352px;
+    margin: 10px 0;
+} 
+
+
+/*---- Sticky Hidden Styles ----*/
+
+header.sticky-hidden {
+    height: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+header.sticky-hidden .container {
+    height: 0;
+    width: 100%;
+}
+
+header.sticky-hidden .header-dropdown {
+    background-color: none;
+    padding: 0;
+}
+
+header.sticky-hidden h2 {
+    display: none;
+}
+
+header.sticky-hidden select{
+    display: none;
+}
+
+
+
+
+/*---- Scrolled Header Styles ----*/
+
+
+header.sticky-visable {
+    position: fixed;
+    opacity: 1;
+    width: 100%;
+    border-top: none;
+    background: #0098a6;
+    height: 70px;
+    top: 0;
+    transition: opacity .3s ease;
+}
+
+header.sticky-visable h2 {
+    float: left;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;  
+    border: none;
+    width: 352px;
+    margin: 14px 0;
+}
+
+header.sticky-visable .header-dropdown{
+    background-color: none;
+    color: white;
+    padding: 0;
+    font-size: 25px;
 }
 
 p strong{
@@ -116,16 +197,6 @@ p strong{
     color: white;
     padding: 10px 0 140px;
     font-size: 25px;
-}
-
-.header-dropdown h2 {
-    float: left;
-    font-size: 30px;
-    color: white;
-    text-decoration: none;  
-    border: none;
-    width: 352px;
-    margin: 10px 0;
 }
 
 .header-dropdown select {
@@ -210,6 +281,15 @@ p strong{
 ul.facility     {
     padding:0;
 }
+
+.facility .section {
+    float: left;
+}
+
+.facility .link-anchor {
+    width: 100%;
+}
+
 
 .facility li {
     width: 100%;
