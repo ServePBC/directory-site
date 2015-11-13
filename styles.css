@@ -111,12 +111,12 @@ header.main p {
 
 header.main h2 {
     float: left;
-    font-size: 30px;
+    font-size: 26px;
     color: white;
     text-decoration: none;  
     border: none;
-    width: 352px;
-    margin: 10px 0;
+    width: auto;
+    margin: 10px 10px 0 0;
 } 
 
 
@@ -167,12 +167,13 @@ header.sticky-visable {
 
 header.sticky-visable h2 {
     float: left;
-    font-size: 30px;
+    font-size: 16px;
+    font-weight: 400;
     color: white;
-    text-decoration: none;  
+    text-decoration: none;
     border: none;
-    width: 352px;
-    margin: 14px 0;
+    width: auto;
+    margin: 8px 10px 0 0;
 }
 
 header.sticky-visable .header-dropdown{
@@ -180,6 +181,10 @@ header.sticky-visable .header-dropdown{
     color: white;
     padding: 0;
     font-size: 25px;
+}
+
+header.sticky-visable select, button{
+    font-size: 21px;
 }
 
 p strong{
@@ -194,23 +199,22 @@ p strong{
 .header-dropdown{
     background-color: #none;
     color: white;
-    padding: 10px 0 140px;
+    padding: 10px 0 190px;
     font-size: 25px;
 }
 
 .header-dropdown select {
     float: left;
-    margin: 10px 0;
-    width: 50%;
+    margin:0;
 }
 
-.header-dropdown select, button:focus{
+.header-dropdown select, button{
     border:none;
     background:none;
     -webkit-appearance: none;
     -moz-appearance: none;
     color: #fff;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 30px;
     font-family: 'Open Sans', sans-serif;
     outline: 0;
@@ -220,7 +224,7 @@ p strong{
     opacity: 1;
 }
 
-.header-dropdown select::after{
+/*.header-dropdown select::after{
     content:""; 
     background: url("img/arrow.svg") no-repeat;
     width: 20px;
@@ -228,7 +232,7 @@ p strong{
     display: block;
     margin-right:20px;
     float: right;
-}
+}*/
 
 .header-dropdown select:hover{
     cursor: pointer;
@@ -525,6 +529,16 @@ iframe.desktop-map {
         display: inline-block;
     }
 
+}
+
+@media screen and (min-width:640px) {
+    header.sticky-visable .header-dropdown{
+        padding:16px 0 0 0;
+    }
+
+    header.sticky-visable select, button{
+        margin: 4px 0;
+    }
 
 }
 
@@ -540,7 +554,7 @@ iframe.desktop-map {
     }
 
     .header p {
-        font-size: 22px;
+        font-size: 22px;    
         line-height: 40px;
     }
 
@@ -583,6 +597,13 @@ iframe.desktop-map {
         display: inline;
     }
 
+    .header-dropdown select{
+        margin: 6px 0;
+    }
+
+    header.sticky-visable select, button{
+        margin: 4px 0;
+    }
 
 }
 
