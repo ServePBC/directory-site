@@ -111,7 +111,7 @@ header.main p {
 
 header.main h2 {
     float: left;
-    font-size: 26px;
+    font-size: 25px;
     color: white;
     text-decoration: none;  
     border: none;
@@ -215,7 +215,7 @@ p strong{
     -moz-appearance: none;
     color: #fff;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Open Sans', sans-serif;
     outline: 0;
     /*border-bottom: 1px solid white;*/
@@ -564,6 +564,10 @@ iframe.desktop-map {
 
     .mobile-map{
         display: none;
+    }
+
+    .header-dropdown select, button{
+        font-size: 30px;
     }
 
     li.space {
