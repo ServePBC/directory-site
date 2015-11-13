@@ -73,36 +73,34 @@
                 <p>Mission: To help you find ways to serve people within Palm Beach County.</p>
                 <div class="header-dropdown">
                     <h2>I am interested in serving</h2>
-                        <ul>
-                            <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                            <li><a data-scroll-nav="1">The Homeless</a></li>
-                            <li><a data-scroll-nav="2">Children &amp; Youth</a></li>
-                            <li><a data-scroll-nav="3">Women &amp; Mothers</a></li>
-                            <li><a data-scroll-nav="4">Families</a></li>
-                            <li><a data-scroll-nav="5">The Elderly</a></li>
-                            <li><a data-scroll-nav="6">Special Needs</a></li>
-                            <li><a data-scroll-nav="7">Counseling &amp; Recovery</a></li>
-                        </ul>
+                    <select name="serve" class="serve-nav">
+                      <option value=""> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                      <option value="1">The Homeless</option>
+                      <option value="2">Children &amp; Youth</option>
+                      <option value="3">Women &amp; Mothers</option>
+                      <option value="4">Families</option>
+                      <option value="5">The Elderly</option>
+                      <option value="6">Special Needs</option>
+                      <option value="7">Counseling &amp; Recovery</option>
+                    </select>
                 </div>
             </div>
         </header>
         
         <header class="sticky-hidden">
-            <div class="container">q
+            <div class="container">
                 <div class="header-dropdown">
                     <h2>I am interested in serving</h2>
-                    <a href="#">
-                        <select name="serve" onchange="location = this.options[this.selectedIndex].value;">
-                          <option value="#"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
-                          <option>The Homeless</option>
-                          <option>Children &amp; Youth</option>
-                          <option>Women &amp; Mothers</option>
-                          <option value="#families">Families</option>
-                          <option value="#elderly">The Elderly</option>
-                          <option value="#specialneeds">Special Needs</option>
-                          <option value="#counselingandrecovery">Counseling &amp; Recovery</option>
-                        </select>
-                    </a>
+                    <select name="serve" class="serve-nav">
+                      <option value=""> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                      <option value="1">The Homeless</option>
+                      <option value="2">Children &amp; Youth</option>
+                      <option value="3">Women &amp; Mothers</option>
+                      <option value="4">Families</option>
+                      <option value="5">The Elderly</option>
+                      <option value="6">Special Needs</option>
+                      <option value="7">Counseling &amp; Recovery</option>
+                    </select>
                 </div>
             </div>
         </header>
@@ -782,7 +780,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-        <script src="js/main.js"></script>
+        <!--<script src="js/main.js"></script>-->
 
     <div class="footer">
         
@@ -817,7 +815,6 @@
     
     
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="scrollit.js"></script>
     <script>
     
 	$(function() {
@@ -833,18 +830,25 @@
 	      }
 	  });
 	});
-        
-    $(function(){   
-        $.scrollIt({
-            upKey: 38,             // key code to navigate to the next section
-            downKey: 40,           // key code to navigate to the previous section
-            easing: 'linear',      // the easing function for animation
-            scrollTime: 600,       // how long (in ms) the animation takes
-            activeClass: 'active', // class given to the active nav element
-            onPageChange: null,    // function(pageIndex) that is called when page is changed
-            topOffset: -70           // offset (in px) for fixed top navigation
+
+    </script>
+
+    <script>
+
+        var serveNav = $('.serve-nav'),
+            page     = $('html, body'),
+            sections = $("[data-scroll-index]");
+
+        serveNav.change(function() {
+            var target = $(this).val();
+
+            serveNav.val( target );
+
+            page.animate({
+                scrollTop: sections.filter("[data-scroll-index="+target+"]").offset().top - 70
+            }, 777);
+
         });
-    });
 
     </script>
 

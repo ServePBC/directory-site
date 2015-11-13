@@ -53,6 +53,8 @@ textarea {
     padding: 0.2em 0;
 }
 
+option { color: #016064; }
+
 
 /* ==========================================================================
    Author's custom styles
@@ -78,16 +80,12 @@ h2 {
     float: left;
 }
 
-<<<<<<< HEAD
-header.main {
-=======
 .count{
     font-size: 25px;
     display:none;
 }
 
-.header{
->>>>>>> CalebAmesbury/master
+header.main {
     border-top: solid 30px #00ACC2;
     background: url("img/banner.jpg") no-repeat center center;
     -webkit-background-size: cover;
