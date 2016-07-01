@@ -147,8 +147,17 @@ header.sticky-hidden select{
     display: none;
 }
 
+#to-top-arrow {
+    position: absolute;
+    right: 25px;
+    height: 25px;
+    width: 25px;
+    padding-top: 7px;
+}
 
-
+.header-dropdown {
+    position: relative;
+}
 
 /*---- Scrolled Header Styles ----*/
 
@@ -614,6 +623,16 @@ iframe.desktop-map {
 @media screen and (min-width:1100px) {
     .container {
         width:70%;
+    }
+}
+
+
+
+@media screen and (max-width: 640px) {
+
+    #to-top-arrow {
+        padding-top: 25px;
+
     }
 }
 
