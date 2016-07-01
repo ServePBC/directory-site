@@ -8,8 +8,8 @@
 	.st1{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10;}
 </style>
 <g transform="translate(0, 0)">
-	<line class="st0" x1="12" y1="23" x2="12" y2="7"/>
-	<polyline class="st1" points="6,13 12,7 18,13 	"/>
-	<line class="st1" x1="2" y1="2" x2="22" y2="2"/>
+	<line class="st0" x1="12" y1="18" x2="12" y2="7"/>
+	<polyline class="st1" points="8,11 12,7 16,11 	"/>
+	<circle class="st1" cx="12" cy="12" r="11"/>
 </g>
 </svg>
