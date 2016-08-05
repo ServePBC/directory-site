@@ -77,7 +77,6 @@ h2 {
     color:#016064;
     border-bottom: solid 1px #016064;
     width: 100%;
-    float: left;
 }
 
 .count{
@@ -337,6 +336,34 @@ ul.facility     {
     height: 25px;
 }
 
+
+
+ul#listings, ul#listings > li, ul#listings > li > ul, ul#listings > li > ul > li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul#listings > li {
+    clear: both;
+}
+ul#listings > li > ul > li {
+    display: block;
+    width: 48%;
+    vertical-align: top;
+    margin: 0 4% 30px 0;
+    float: left;
+}
+ul#listings > li > ul > li:nth-child(2n) {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 800px) {
+  ul#listings > li > ul > li {
+      width: 100%;
+      margin: 0 0 30px 0;
+  }
+}
+
 ul#listings ul > li > span {
   display: block;
 }
@@ -362,6 +389,13 @@ ul#listings ul > li > span.callout {
 }
 ul#listings ul > li > span.callout {
   font-weight: 700;
+  font-size: 14px;
+}
+ul#listings ul > li > span.callout:before {
+  content: "\f178";
+  font-family: "FontAwesome";
+  font-weight: normal;
+  margin: 0 10px 0 0;
 }
 
 ul#listings ul > li > span.phone,
@@ -378,12 +412,20 @@ ul#listings ul > li > span.website {
     border-radius: 5px;
     word-wrap: break-word;
 }
+ul#listings ul > li > span.website a {
+    text-decoration: none;
+    color: #00ACC2;
+}
+ul#listings ul > li > span.website a:hover {
+    border-bottom: 1px solid;
+}
+
 
 .phone a, .map a, .website a{
     word-wrap: break-word;
 }
 
-.map::before {
+.address::before {
     content:"";
     background: url("../images/map-pin.svg") no-repeat;
     background-color: #FAFAFA;
@@ -411,15 +453,6 @@ ul#listings ul > li > span.website {
     height:20px;
     margin:0 10px 0 -34px;
     float: left;
-}
-
-.facility a {
-    text-decoration: none;
-    color:#00ACC2;
-}
-
-.facility a:hover {
-    border-bottom: 1px solid;
 }
 
 .mobile-map{
@@ -772,14 +805,4 @@ iframe.desktop-map {
     h3 {
         page-break-after: avoid;
     }
-}
-
-
-
-/* DC overrides */
-
-ul#listings, ul#listings > li, ul#listings > li > ul, ul#listings > li > ul > li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
