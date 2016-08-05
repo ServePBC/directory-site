@@ -63,7 +63,7 @@
 
 
     </head>
-    <body>
+    <body data-scroll-index="0">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -75,7 +75,7 @@
                 <div class="header-dropdown">
                     <h2>I am interested in serving ...</h2>
                     <select name="serve" class="serve-nav">
-                      <option value="">Select One &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                      <option value="0" id="change-val0">Select One &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
                       <option value="1">The Homeless</option>
                       <option value="2">Children &amp; Youth</option>
                       <option value="3">Women &amp; Mothers</option>
@@ -94,7 +94,7 @@
                 <div class="header-dropdown">
                     <h2>I am interested in serving ...</h2>
                     <select name="serve" class="serve-nav">
-                      <option value="">Select One &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                      <option value="0" id="change-val0">Select One &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
                       <option value="1">The Homeless</option>
                       <option value="2">Children &amp; Youth</option>
                       <option value="3">Women &amp; Mothers</option>
@@ -226,7 +226,7 @@
                         </div>
                         <div class="website">
                             <a href="http://www.salvationarmyflorida.org/westpalmbeach" target="blank">
-                                salvationarmyflorida.org...
+                                salvationarmyflorida.org/westpalmbeach
                             </a>
                         </div>
                     </li>
@@ -1077,64 +1077,10 @@
         </div>
 
     </div>
-    
-    
+       
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-
-
-    <script>
-    
-	$(function() {
-	//caches a jQuery object containing the header element
-	var header = $(".sticky-hidden");
-	  $(window).scroll(function() {
-	      var scroll = $(window).scrollTop();
-
-	      if (scroll >= 700) {
-	          header.removeClass("sticky-hidden").addClass("sticky-visable");
-	      } else {
-	          header.removeClass("sticky-visable").addClass("sticky-hidden");
-	      }
-	  });
-       $(window).scroll(function(){
-        if ($(this).scrollTop() >= 700) {
-            $('.scrollToTop').fadeIn();
-        } else {
-            $('.scrollToTop').fadeOut();
-        }
-    });
-        //Click event to scroll to top
-        $('.scrollToTop').click(function(){
-            $('html, body').animate({scrollTop : 0},800);
-            return false;
-        });
-
-
-	});
-
-    </script>
-
-    <script>
-
-        var serveNav  = $('.serve-nav'),
-            page      = $('html, body'),
-            sections  = $("[data-scroll-index]");
-            
-
-        serveNav.change(function() {
-            var target = $(this).val();
-
-            serveNav.val( target );
-
-            page.animate({
-                scrollTop: sections.filter("[data-scroll-index="+target+"]").offset().top - 70
-            }, 777);
-
-        });
-
-    </script>
-
-    
+    <script src="app.js"></script>
+    <script src="navbar.js"></script>
 
     </body>
 </html>
