@@ -2,10 +2,7 @@ $(document).ready(function() {
   var data = {},
     sanitize = function(s) {
       return s.toLowerCase().replace(/ /g, '-');
-    },
-    entry_template = Handlebars.compile( '<li><span class="title">{{title}}</span><span class="description">{{description}}</span><span class="callout">{{callout}}</span><span class="address">{{address}}</span><span class="phone">{{phone}}</span><span class="website"><a href="{{website}}">Visit Website</a></span></li>' ),
-		category_header_template = Handlebars.compile( '<li><h2>{{category}}</h2><ul id="{{sanitized}}"></ul></li>' ),
-    category_link_template = Handlebars.compile( '<option value="#{{sanitized}}">{{category}}</option>' );
+    };
   $.getJSON("https://spreadsheets.google.com/feeds/list/1zEktgv2iA9W7EhGNJCzik5HYIXLh69BZsV7IfGec5lI/1/public/full?alt=json", function(json) {
 		var entries = json['feed']['entry'];
     $.each(entries, function(i, item) {
@@ -16,11 +13,15 @@ $(document).ready(function() {
         	'sanitized': sanitize(item['gsx$category']['$t']),
           'category':item['gsx$category']['$t']
         };
-        $('.nav').append( category_link_template(category) );
-        $('#listings').append( category_header_template(category) );
+        $('.nav').append( window.templates.category.link(category) );
+        $('#listings').append( window.templates.category.header(category) );
+
+          if (i == (entries.length - 1)) {
+              window.loadCTA();
+          }
       }
 
-      var output = entry_template({
+      var output = window.templates.entry.listing({
       	'title': item['gsx$title']['$t'],
         'description': item['gsx$description']['$t'],
         'callout': item['gsx$callout']['$t'],
@@ -36,7 +37,7 @@ $(document).ready(function() {
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: target.offset().top - 120
+          scrollTop: target.offset().top - 140
         }, 1500);
         return false;
       }
@@ -50,6 +51,8 @@ $(document).ready(function() {
     $(document).on('click', 'a[href*="#"]:not([href="#"])', function(e) {
       e.preventDefault();
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        if (this.hash == "#top")
+          $('.serve-nav').val("#top");
         var target = $(this.hash);
         scrollTo(target);
       }

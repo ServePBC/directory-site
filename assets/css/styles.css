@@ -164,7 +164,6 @@ header.sticky-hidden select{
 
 /*---- Scrolled Header Styles ----*/
 
-
 header.sticky-visible {
     position: fixed;
     opacity: 1;
@@ -184,6 +183,9 @@ body.sticky-visible:before {
   height: 350px;
   width: 100%;
   display: block;
+}
+header.sticky-visible .scrolltop {
+  display: true;
 }
 
 header.sticky-visible h2 {
@@ -552,9 +554,53 @@ iframe.desktop-map {
 
 
 
+/* homeless resources */
 
 
+#Homeless-Resources{
+    background: #F2F2F2;
+    border-radius: 5px;
+    padding: 40px;
+    float: left;
+    margin-top:30px;
+}
 
+#Homeless-Resources img{
+    width: 260px;
+    margin: 0px auto 15px;
+    display: block;
+}
+#Homeless-Resources h4 {
+    font-size: 22px;
+    color: #016064;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+}
+#Homeless-Resources p{
+    color:#016064;
+    font-size:13px;
+    line-height: 20px;
+    padding: 0 15px 10px 0;
+    margin:0;
+}
+#Homeless-Resources .download-cards, #Homeless-Resources .buy-cards {
+  display: inline-block;
+  background: url("../images/download.svg") no-repeat top left;
+  text-indent: 30px;
+}
+#Homeless-Resources .buy-cards {
+  background: url("../images/globe.svg") no-repeat top left;
+  margin-left: 20px;
+}
+#Homeless-Resources .download-cards a, #Homeless-Resources .buy-cards a{
+    color:#00ACC2;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    word-wrap: break-word;
+    height: 30px;
+}
 
 
 
@@ -672,6 +718,22 @@ iframe.desktop-map {
 
     header.sticky-visible select, button{
         margin: 4px 0;
+    }
+
+
+    header.sticky-visable select, button{
+        margin: 4px 0;
+    }
+
+
+    #Homeless-Resources img{
+        float:right;
+        width:320px;
+        height: 348;
+        margin: 0 0 20px 20px;
+    }
+    #Homeless-Resources h4 {
+        font-size: 30px;
     }
 
 }
