@@ -560,9 +560,8 @@ iframe.desktop-map {
 #Homeless-Resources{
     background: #F2F2F2;
     border-radius: 5px;
-    padding: 40px;
-    float: left;
-    margin-top:30px;
+    padding: 40px !important;
+    margin:30px 0 !important;
 }
 
 #Homeless-Resources img{
@@ -590,7 +589,7 @@ iframe.desktop-map {
 }
 #Homeless-Resources .buy-cards {
   background: url("../images/globe.svg") no-repeat top left;
-  margin-left: 20px;
+  margin-left: 0;
 }
 #Homeless-Resources .download-cards a, #Homeless-Resources .buy-cards a{
     color:#00ACC2;
@@ -651,6 +650,12 @@ iframe.desktop-map {
         margin: 4px 0;
     }
 
+}
+
+@media screen and (min-width:700px) {
+  #Homeless-Resources .buy-cards {
+    margin-left: 20px;
+  }
 }
 
 
