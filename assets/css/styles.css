@@ -414,11 +414,11 @@ ul#listings ul > li > span.website {
     border-radius: 5px;
     word-wrap: break-word;
 }
-ul#listings ul > li > span.website a {
+ul#listings ul > li > span a {
     text-decoration: none;
     color: #00ACC2;
 }
-ul#listings ul > li > span.website a:hover {
+ul#listings ul > li > span a:hover {
     border-bottom: 1px solid;
 }
 
