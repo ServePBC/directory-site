@@ -20,6 +20,19 @@ Handlebars.registerHelper('breaklines', function(text) {
   return new Handlebars.SafeString(text);
 });
 
+Handlebars.registerHelper('urlencode', function(text) {
+  text = Handlebars.Utils.escapeExpression(text);
+  text = text.replace(/(\r\n|\n|\r)/gm,' ');
+  text = encodeURIComponent(text);
+  return new Handlebars.SafeString(text);
+});
+
+Handlebars.registerHelper('stripalpha', function(text) {
+  text = Handlebars.Utils.escapeExpression(text);
+  text = text.replace(/[^\/\d]/g,'');
+  return new Handlebars.SafeString(text);
+});
+
 window.templates = {
   'general': {
     'cta': Handlebars.getTemplate('cta')

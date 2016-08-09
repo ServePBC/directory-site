@@ -1,1 +1,10 @@
-<li><span class="title">{{title}}</span><span class="description">{{description}}</span><span class="callout">{{callout}}</span><span class="address">{{breaklines address}}</span><span class="phone">{{phone}}</span><span class="website"><a href="{{website}}">Visit Website</a></span></li>
+<li>
+  <span class="title">{{title}}</span>
+  <span class="description">{{description}}</span>
+  <span class="callout">{{callout}}</span>
+  <span class="address">
+    <a href="https://www.google.com/maps/place/{{urlencode address}}" target="blank">{{breaklines address}}</a>
+  </span>
+  <span class="phone"><a href="tel:+{{stripalpha phone}}">{{phone}}</a></span>
+  <span class="website"><a href="{{website}}">Visit Website</a></span>
+</li>
