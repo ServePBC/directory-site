@@ -1,0 +1,819 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+option { color: #016064; }
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    margin: 0;
+}
+
+ h1 {
+    color: white;
+    font-weight: 300;
+    font-size:35px;
+    padding-top: 30px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 300;
+    color:#016064;
+    border-bottom: solid 1px #016064;
+    width: 100%;
+    float: left;
+    line-height: 1.5em;
+}
+
+h4 {
+    font-size: 22px;
+    color: #016064;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+    
+}
+
+.facility li p {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.count{
+    font-size: 25px;
+    display:none;
+}
+
+header.main {
+    border-top: solid 30px #00ACC2;
+    background: url("img/banner.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header.main h1 {
+    color: white;
+    font-weight: 300;
+    font-size:35px;
+    padding-top: 30px;
+}
+
+header.main p {
+    font-size: 18px;
+    color: white;
+    line-height: 30px;
+    padding-bottom: 20px;
+    margin: 0; 
+}
+
+header.main h2 {
+    float: left;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;  
+    border: none;
+    width: auto;
+    margin: 10px 10px 0 0;
+} 
+
+
+/*---- Sticky Hidden Styles ----*/
+
+header.sticky-hidden {
+    height: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+header.sticky-hidden .container {
+    height: 0;
+    width: 100%;
+}
+
+header.sticky-hidden .header-dropdown {
+    background-color: none;
+    padding: 0;
+}
+
+header.sticky-hidden h2 {
+    display: none;
+}
+
+header.sticky-hidden select{
+    display: none;
+}
+
+#to-top-arrow {
+    position: absolute;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    padding-top: 7px;
+}
+
+.header-dropdown {
+    position: relative;
+}
+
+/*---- Scrolled Header Styles ----*/
+
+
+header.sticky-visable {
+    position: fixed;
+    opacity: 1;
+    width: 100%;
+    border-top: none;
+    background: #0098a6;
+    height: 70px;
+    top: 0;
+    transition: opacity .3s ease;
+    box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.12);
+}
+
+header.sticky-visable h2 {
+    float: left;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    border: none;
+    width: auto;
+    margin: 8px 10px 0 0;
+}
+
+header.sticky-visable .header-dropdown{
+    background-color: none;
+    color: white;
+    padding: 0;
+    font-size: 25px;
+}
+
+header.sticky-visable select, button{
+    font-size: 21px;
+}
+
+p strong{
+    font-size: 14px;
+}
+
+.container {
+    width:90%;
+    margin: 0 auto;
+}
+
+.header-dropdown{
+    background-color: #none;
+    color: white;
+    padding: 10px 0 190px;
+    font-size: 25px;
+}
+
+.header-dropdown select {
+    float: left;
+    margin:0;
+}
+
+.header-dropdown select, button{
+    border:none;
+    background:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    outline: 0;
+    /*border-bottom: 1px solid white;*/
+    text-decoration: underline;
+    border-radius: 0;
+    opacity: 1;
+}
+
+/*.header-dropdown select::after{
+    content:""; 
+    background: url("img/arrow.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-right:20px;
+    float: right;
+}*/
+
+.header-dropdown select:hover{
+    cursor: pointer;
+}
+
+.dropdown-condensed{
+    background-color: #0BC6DC;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.dropdown-condensed h2 {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;  
+    border: none;
+}
+
+.dropdown-condensed select, button:focus{
+    border:none;
+    background:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: white;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    outline:0;
+    /*border-bottom: 1px solid white;*/
+    text-decoration: underline;
+    border-radius: 0;
+    opacity: .7;
+}
+
+.dropdown-condensed select::after{
+    content:""; 
+    background: url("img/arrow.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-right:20px;
+    float: right;
+}
+
+.dropdown-condensed select:hover{
+    cursor: pointer;
+}
+
+ul.facility     {
+    padding:0;
+}
+
+.facility .section {
+    float: left;
+}
+
+.facility .link-anchor {
+    width: 100%;
+}
+
+
+.facility li {
+    width: 100%;
+    float:left;
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.space {
+    display: none;
+    width:6%;
+    float: left;
+    height: 10px;
+}
+
+.line-break {
+    display: none;
+    width: 100%;
+    clear: both;
+    height: 25px;
+}
+
+.facility h3{
+    font-size:16px;
+    font-weight: 600;
+    line-height: 20px;
+    color:white;
+    background-color:#25C6DA;
+    width: 100%;
+    padding:12px 15px;
+    box-sizing: border-box;
+    margin: 0 0 15px 0;
+}
+
+.facility, .Homeless-Resources p{
+    color:#016064;
+    font-size:13px;
+    line-height: 20px;
+    padding: 0 15px 10px 15px;
+    margin:0;
+}
+
+.facility .phone, .map, .website{
+    background-color:#FAFAFA;
+    padding:10px 15px 10px 50px;
+    margin: 8px 15px;
+    box-sizing: border-box;
+    color:#00ACC2;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    border-radius: 5px;
+    word-wrap: break-word;
+}
+
+.phone a, .map a, .website a{
+    word-wrap: break-word;
+}
+
+.map::before {
+    content:"";
+    background: url("img/map-pin.svg") no-repeat;
+    background-color: #FAFAFA;
+    width: 20px;
+    height:20px;
+    margin:1px 5px 0 -30px;
+    float: left;
+}
+
+.phone::before {
+    content:"";
+    background: url("img/phone.svg") no-repeat;
+    background-color: #FAFAFA;
+    width: 20px;
+    height:20px;
+    margin:1px 10px 0 -34px;
+    float:left;
+}
+
+.website::before {
+    content:"";
+    background: url("img/globe.svg") no-repeat;
+    background-color: #FAFAFA;
+    width: 20px;
+    height:20px;
+    margin:0 10px 0 -34px;
+    float: left;
+}
+
+.facility a {
+    text-decoration: none;
+    color:#00ACC2;
+}
+
+.facility a:hover {
+    border-bottom: 1px solid;
+}
+
+.mobile-map{
+    width: 100%;
+}
+
+iframe.desktop-map {
+    display:none;
+}
+    
+
+.footer {
+    background-color:#25C6DA;
+    color: white;
+    box-sizing: border-box;
+    float: left;
+    padding: 40px 0 20px 0;
+    width: 100%;
+    font-size: 18px;
+}
+
+.footer a{
+    text-decoration: none;
+    color:white;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.footer img:hover{
+    opacity:.8;
+}
+
+.made-by, .made-by a {
+    color: #008290;
+}
+
+.made-by a:hover{
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.add-wrapper{
+    background-color:#00ABC4;
+    width: 100%;
+    padding:25px;
+    margin-bottom: 20px;
+    float: left;
+    box-sizing:border-box;
+}
+
+.add{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.add-text{
+    padding-left:55px;
+}
+
+.add-text:before{
+    content: "";
+    background: url("img/add.svg") no-repeat;
+    background-color: #00ABC4;
+    width: 40px;
+    height: 35px;
+    margin: 7px 10px 0 -55px;
+    float: left;
+}
+
+.made-by{
+    float: left;
+    line-height: 30px;
+}
+
+.social{
+    float: right;
+    line-height: 30px;
+}
+
+.social img{
+    float: right;
+    margin-left: 12px;
+    vertical-align: middle;
+    height: 30px;
+}
+
+.social-label{
+    display: none;
+    color:#008290;
+    margin-right: 5px;
+}
+
+
+#Homeless-Resources{
+    background: #F2F2F2;
+    border-radius: 5px;
+    padding: 40px;
+    float: left;
+    margin-top:30px;
+}
+
+#Homeless-Resources img{
+    width: 260px;
+    margin: 0px auto 15px;
+    display: block;
+}
+
+.download-cards, .buy-cards{
+    color:#00ACC2;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    word-wrap: break-word;
+    float: left;
+    height: 30px;
+}
+
+
+.download-cards::before{
+    content:"";
+    background: url("img/download.svg") no-repeat;
+    width: 20px;
+    height:20px;
+    margin:0 10px 0 0;
+    float: left;
+}
+
+.buy-cards::before{
+    content:"";
+    background: url("img/globe.svg") no-repeat;
+    width: 20px;
+    height:20px;
+    margin:0 10px 0 0;
+    float: left;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+
+@media screen and (min-width:500px) {
+    .container {
+        width:70%;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    .count{
+        display: inline-block;
+    }
+
+}
+
+@media screen and (min-width:640px) {
+    header.sticky-visable .header-dropdown{
+        padding:16px 0 0 0;
+    }
+
+    header.sticky-visable select, button{
+        margin: 4px 0;
+    }
+
+}
+
+
+@media screen and (min-width:800px) {
+ 
+    h1 {
+        font-size:50px;
+    }
+
+    .container {
+        width:85%;
+    }
+
+    .header p {
+        font-size: 22px;    
+        line-height: 40px;
+    }
+
+    iframe.desktop-map{
+        display: block;
+    }
+
+    .mobile-map{
+        display: none;
+    }
+
+    .header-dropdown select, button{
+        font-size: 30px;
+    }
+
+    li.space {
+        width:6% !important;
+        float: left !important;
+        display: block;
+    }
+
+    .facility li {
+        width: 47%;
+        margin-bottom: 0;
+    }
+
+    .line-break {
+        display: block;
+        width: 100%;
+        clear: both;
+        height: 25px;
+    }
+
+    .social-label{
+        display: none;
+    }
+
+    .add{
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .social-label{
+        display: inline;
+    }
+
+    .header-dropdown select{
+        margin: 6px 0;
+    }
+
+    header.sticky-visable select, button{
+        margin: 4px 0;
+    }
+
+
+    #Homeless-Resources img{
+        float:right;
+        width:320px;
+        height: 348;
+        margin: 0 0 20px 20px;
+    }
+
+    h4{
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (min-width:1100px) {
+    .container {
+        width:70%;
+    }
+
+    #Homeless-Resources img{
+        float:right;
+        width:320px;
+        height: 348;
+        margin: 0 0 0 20px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 640px) {
+
+    #to-top-arrow {
+        padding-top: 25px;
+
+    }
+}
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
