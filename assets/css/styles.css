@@ -620,10 +620,6 @@ iframe.desktop-map {
     background-color: #f6f6f6;
     color: #016064;
 }
-#contact input[type="text"], #contact input[type="email"],  #contact input[type="phone"] {
-    width: 49%;
-    display: inline-block;
-}
 #contact input[type="submit"] {
     line-height: 2.5em;
     color: #f6f6f6;
@@ -684,6 +680,11 @@ iframe.desktop-map {
 @media screen and (min-width:700px) {
   #Homeless-Resources .buy-cards {
     margin-left: 20px;
+  }
+
+  #contact input[type="text"], #contact input[type="email"],  #contact input[type="phone"] {
+      width: 49%;
+      display: inline-block;
   }
 }
 
