@@ -6,6 +6,9 @@ $(document).ready(function() {
   $.getJSON("https://spreadsheets.google.com/feeds/list/1zEktgv2iA9W7EhGNJCzik5HYIXLh69BZsV7IfGec5lI/1/public/full?alt=json", function(json) {
 		var entries = json['feed']['entry'];
     $.each(entries, function(i, item) {
+      if (i == (entries.length - 1)) {
+          window.loadCTA();
+      }
       if (!data.hasOwnProperty(item['gsx$category']['$t'])) {
         data[item['gsx$category']['$t']] = [];
 
@@ -15,10 +18,6 @@ $(document).ready(function() {
         };
         $('.nav').append( window.templates.category.link(category) );
         $('#listings').append( window.templates.category.header(category) );
-
-          if (i == (entries.length - 1)) {
-              window.loadCTA();
-          }
       }
 
       var output = window.templates.entry.listing({
