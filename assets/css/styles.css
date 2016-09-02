@@ -602,6 +602,35 @@ iframe.desktop-map {
 }
 
 
+/* contact form */
+
+#contact {
+  padding-top: 20px;
+}
+#contact input, #contact textarea {
+    display: block;
+    width: 99%;
+    margin: 0 0 10px 0;
+    padding: 0;
+    text-indent: 10px;
+    border: none;
+    line-height: 2em;
+    font-size: .8em;
+    border-radius: 2px;
+    background-color: #f6f6f6;
+    color: #016064;
+}
+#contact input[type="text"], #contact input[type="email"],  #contact input[type="phone"] {
+    width: 49%;
+    display: inline-block;
+}
+#contact input[type="submit"] {
+    line-height: 2.5em;
+    color: #f6f6f6;
+    background-color: #008290;
+}
+
+
 
 
 
