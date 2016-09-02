@@ -57,7 +57,7 @@ option { color: #016064; }
 
 
 /* ==========================================================================
-   Author's custom styles
+   Custom styles
    ========================================================================== */
 
 body {
@@ -110,16 +110,19 @@ header.main p {
 
 header.main h2 {
     float: left;
-    font-size: 25px;
+    font-size: 22px;
     color: white;
     text-decoration: none;
     border: none;
     width: auto;
-    margin: 10px 10px 0 0;
+    margin: 10px 10px 10px 0;
 }
 
 
 /*---- Sticky Hidden Styles ----*/
+
+
+
 
 header.sticky-hidden {
     height: 0;
@@ -151,7 +154,7 @@ header.sticky-hidden select{
     right: 0;
     height: 25px;
     width: 25px;
-    padding-top: 7px;
+    padding-top: 20px;
 }
 
 .header-dropdown {
@@ -170,20 +173,29 @@ header.sticky-visible {
     width: 100%;
     border-top: none;
     background: #0098a6;
-    height: 70px;
+    height: 64px;
     top: 0;
     transition: opacity .3s ease;
     box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.12);
 }
+
 header.sticky-visible .header-brand {
   display: none;
 }
+
 body.sticky-visible:before {
   content: '';
   height: 350px;
   width: 100%;
   display: block;
 }
+
+body.sticky-visible .serve-nav{
+    background-color:#008290;
+    width: 250px;
+    margin-top: 10px;
+}
+
 header.sticky-visible .scrolltop {
   display: true;
 }
@@ -205,6 +217,11 @@ header.sticky-visible .header-dropdown{
     padding: 0;
     font-size: 25px;
 }
+
+header.sticky-visible .header-dropdown h2{
+    display: none;
+}
+
 
 header.sticky-visible select, button{
     font-size: 21px;
@@ -233,18 +250,23 @@ p strong{
 
 .header-dropdown select, button{
     border:none;
-    background:none;
+    background-color: #0098A6;
+    background-image: url("../images/hamburger.svg");
+    background-repeat: no-repeat;
+    background-position: 95% center;
     -webkit-appearance: none;
     -moz-appearance: none;
     color: #fff;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 21px;
+    line-height:44px;
     font-family: 'Open Sans', sans-serif;
     outline: 0;
-    /*border-bottom: 1px solid white;*/
-    text-decoration: underline;
-    border-radius: 0;
+    text-decoration: none;
+    border-radius: 4px;
     opacity: 1;
+    padding: 0 42px 0 15px;
+    margin-top:5px;
 }
 
 /*.header-dropdown select::after{
@@ -259,6 +281,10 @@ p strong{
 
 .header-dropdown select:hover{
     cursor: pointer;
+}
+
+select::-ms-expand {
+   display: none;
 }
 
 .dropdown-condensed{
@@ -527,13 +553,19 @@ iframe.desktop-map {
 }
 
 .made-by{
-    float: left;
+    float:left;
     line-height: 30px;
+    width: 49%;
+    display: inline-block;
+    font-size:14px;
 }
 
 .social{
-    float: right;
+    width:50%;
     line-height: 30px;
+    display:inline-block;
+    text-align: right;
+    float: right;
 }
 
 .social img{
@@ -664,18 +696,18 @@ iframe.desktop-map {
         display: inline-block;
     }
 
-}
-
-@media screen and (min-width:640px) {
-    header.sticky-visible .header-dropdown{
-        padding:16px 0 0 0;
+    .made-by{
+        font-size:18px;
     }
 
-    header.sticky-visible select, button{
-        margin: 4px 0;
+    body.sticky-visible .serve-nav{
+        width: auto;
     }
 
 }
+
+
+
 
 @media screen and (min-width:700px) {
   #Homeless-Resources .buy-cards {
@@ -695,6 +727,16 @@ iframe.desktop-map {
         font-size:50px;
     }
 
+    header.main h2 {
+        float: left;
+        font-size: 26px;
+        color: white;
+        text-decoration: none;
+        border: none;
+        width: auto;
+        margin: 10px 10px 0 0;
+    }
+
     .container {
         width:85%;
     }
@@ -712,9 +754,7 @@ iframe.desktop-map {
         display: none;
     }
 
-    .header-dropdown select, button{
-        font-size: 30px;
-    }
+
 
     li.space {
         width:6% !important;
@@ -747,19 +787,6 @@ iframe.desktop-map {
         display: inline;
     }
 
-    .header-dropdown select{
-        margin: 6px 0;
-    }
-
-    header.sticky-visible select, button{
-        margin: 4px 0;
-    }
-
-
-    header.sticky-visable select, button{
-        margin: 4px 0;
-    }
-
 
     #Homeless-Resources img{
         float:right;
@@ -779,15 +806,15 @@ iframe.desktop-map {
     }
 }
 
-
-
-@media screen and (max-width: 640px) {
-
-    #to-top-arrow {
-        padding-top: 25px;
-
+@media screen and (min-width:1470px) {
+    .container {
+        width:958px;
     }
 }
+
+
+
+
 
 
 
