@@ -626,6 +626,14 @@ iframe.desktop-map {
     background-color: #008290;
 }
 
+/* map */
+
+#map {
+  width:100%;
+  height:500px;
+  border:none;
+}
+
 
 
 
