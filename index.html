@@ -71,7 +71,15 @@
             <div class="add-wrapper">
                 <div class="add">
                     <div class="add-text">
-                        If you would like us to consider adding your organization to this list, please <strong><a href="javascript:void(null)" class="unscramble" data-recipient="help" data-domain="servepbc.org">send us a message</a></strong>.
+                        If you would like us to consider adding your organization to this list, please <strong><a href="javascript:void(null)" class="unscramble" data-recipient="help" data-domain="servepbc.org">send us a message</a></strong>:
+                        <form action="https://formspree.io/help@servepbc.org" id="contact" method="POST">
+                            <input type="text" name="name" placeholder="Name">
+                            <input type="text" name="organization" placeholder="Organization">
+                            <input type="email" name="_replyto" placeholder="Email">
+                            <input type="phone" name="phone" placeholder="Phone">
+                            <textarea name="message" placeholder="Message"></textarea>
+                            <input type="submit" value="Send">
+                        </form>
                     </div>
                 </div>
             </div>
