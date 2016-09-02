@@ -6,9 +6,7 @@ $(document).ready(function() {
   $.getJSON("https://spreadsheets.google.com/feeds/list/1zEktgv2iA9W7EhGNJCzik5HYIXLh69BZsV7IfGec5lI/1/public/full?alt=json", function(json) {
 		var entries = json['feed']['entry'];
     $.each(entries, function(i, item) {
-      if (i == (entries.length - 1)) {
-          window.loadCTA();
-      }
+
       if (!data.hasOwnProperty(item['gsx$category']['$t'])) {
         data[item['gsx$category']['$t']] = [];
 
@@ -20,14 +18,26 @@ $(document).ready(function() {
         $('#listings').append( window.templates.category.header(category) );
       }
 
-      var output = window.templates.entry.listing({
-      	'title': item['gsx$title']['$t'],
-        'description': item['gsx$description']['$t'],
-        'callout': item['gsx$callout']['$t'],
-        'address': item['gsx$address']['$t'],
-        'phone': item['gsx$phone']['$t'],
-        'website': item['gsx$website']['$t']
-      });
+      var listing = {
+        	'title': item['gsx$title']['$t'],
+          'description': item['gsx$description']['$t'],
+          'callout': item['gsx$callout']['$t'],
+          'address': item['gsx$address']['$t'],
+          'latitude': item['gsx$latitude']['$t'],
+          'longitude': item['gsx$longitude']['$t'],
+          'phone': item['gsx$phone']['$t'],
+          'website': item['gsx$website']['$t']
+        },
+        output = window.templates.entry.listing(listing);
+
+      if (listing.latitude && listing.longitude) {
+        L.marker([listing.latitude, listing.longitude], {
+          icon: L.mapbox.marker.icon({
+            'marker-size': 'small',
+            'marker-color': '#00c5d9'
+          })
+        }).addTo(window.map);
+      }
 
       $('#' + sanitize(item['gsx$category']['$t'])).append(output);
     });
