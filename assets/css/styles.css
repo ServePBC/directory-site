@@ -240,7 +240,7 @@ p strong{
     background-color: #none;
     color: white;
     padding: 10px 0 190px;
-    font-size: 25px;
+    font-size: 25px;    
 }
 
 .header-dropdown select {
@@ -267,6 +267,7 @@ p strong{
     opacity: 1;
     padding: 0 42px 0 15px;
     margin-top:5px;
+    height: 44px;
 }
 
 /*.header-dropdown select::after{
