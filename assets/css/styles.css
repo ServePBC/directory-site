@@ -526,9 +526,8 @@ iframe.desktop-map {
 }
 
 .add-wrapper{
-    background-color:#00ABC4;
+    /*background-color:#00ABC4;*/
     width: 100%;
-    padding:25px;
     margin-bottom: 20px;
     float: left;
     box-sizing:border-box;
@@ -537,19 +536,16 @@ iframe.desktop-map {
 .add{
     width: 100%;
     margin: 0 auto;
-}
-
-.add-text{
-    padding-left:55px;
+    font-weight: 300;
+    font-size: 20px;
 }
 
 .add-text:before{
     content: "";
     background: url("../images/add.svg") no-repeat;
-    background-color: #00ABC4;
     width: 40px;
     height: 35px;
-    margin: 7px 10px 0 -55px;
+    margin: 9px 15px 0 0;
     float: left;
 }
 
@@ -643,20 +639,56 @@ iframe.desktop-map {
 #contact input, #contact textarea {
     display: block;
     width: 99%;
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
     padding: 0;
-    text-indent: 10px;
     border: none;
-    line-height: 2em;
-    font-size: .8em;
-    border-radius: 2px;
+    line-height: 40px;
+    font-size: 16px;
+    border-radius: 0;
     background-color: #f6f6f6;
     color: #016064;
+    background-color: #25C6DA;
+    border-bottom: 1px solid white;
+    color: white;
+    padding-left:0px;
 }
+
+::-webkit-input-placeholder {
+   color: white;
+   font-weight: 600;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;  
+   font-weight: 600;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;  
+   font-weight: 600;
+}
+
+:-ms-input-placeholder {  
+   color: white; 
+   font-weight: 600;
+}
+
+
+#contact textarea {
+    font-size: 14px;
+    line-height: 24px;
+}
+
 #contact input[type="submit"] {
     line-height: 2.5em;
     color: #f6f6f6;
-    background-color: #008290;
+    background-color: #0098A6;
+    border:none;
+    height: 44px;
+    font-size:18px;
+    font-weight: 600;
+    border-radius:4px;
+    margin-top:30px;
 }
 
 
@@ -716,9 +748,19 @@ iframe.desktop-map {
   }
 
   #contact input[type="text"], #contact input[type="email"],  #contact input[type="phone"] {
-      width: 49%;
+      width: 47%;
       display: inline-block;
-  }
+    }
+
+    #contact input[name="name"]{
+        margin-right:4%;
+    }
+
+    #contact input[name="_replyto"]{
+        margin-right:4%;
+    }
+
+
 }
 
 
