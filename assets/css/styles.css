@@ -699,6 +699,14 @@ iframe.desktop-map {
   border:none;
 }
 
+/* map */
+
+#map {
+  width:100%;
+  height:500px;
+  border:none;
+}
+
 
 
 
